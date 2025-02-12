@@ -2,8 +2,10 @@ import ItemList from "./ItemList";
 const Main = () => {
   return (
     <div className="main">
-      <ItemList />
-      <ItemList />
+      {}
+      <ItemList title="Artistas Populares" items={10} />
+      {}
+      <ItemList title="Musicas Populares" items={20} />
     </div>
   );
 };
