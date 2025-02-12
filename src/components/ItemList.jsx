@@ -1,4 +1,6 @@
-import SingleItem from "./SingleItem"; // eslint-disable-next-line react/prop-types
+import SingleItem from "./SingleItem"; //
+import { artistArray } from "../assets/database/artists";
+// eslint-disable-next-line react/prop-types
 const ItemList = ({ title, items }) => {
   return (
     <div>
@@ -11,8 +13,8 @@ const ItemList = ({ title, items }) => {
         </div>
 
         <div className="item-list__container">
-          {Array(items)
-            .fill()
+          {artistArray
+            .filter((currentvalue, index) => index < items)
             .map((currentvalue, index) => (
               <SingleItem key={`${title}-${index}`} />
             ))}
