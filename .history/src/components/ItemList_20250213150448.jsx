@@ -1,7 +1,7 @@
 import SingleItem from "./SingleItem"; //
 
 // eslint-disable-next-line react/prop-types
-const ItemList = ({ title, items, itemsArray, path, idPath }) => {
+const ItemList = ({ title, items, itemsArray, path }) => {
   return (
     <div>
       <div className="item-list">
@@ -17,11 +17,7 @@ const ItemList = ({ title, items, itemsArray, path, idPath }) => {
             // eslint-disable-next-line react/prop-types
             .filter((currentvalue, index) => index < items)
             .map((currObj, index) => (
-              <SingleItem
-                idPath={idPath}
-                {...currObj}
-                key={`${title}-${index}`}
-              />
+              <SingleItem {...currObj} key={`${title}-${index}`} />
             ))}
         </div>
       </div>

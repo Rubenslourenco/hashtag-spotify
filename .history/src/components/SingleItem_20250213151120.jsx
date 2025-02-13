@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
 // eslint-disable-next-line react/prop-types
-const SingleItem = ({ id, name, image, artist, idPath }) => {
+const SingleItem = ({ name, image, artist, idPath }) => {
   return (
-    <a href={`/${idPath}/${id}`} className="single-item">
+    <a href={idPath} className="single-item">
       <div className="single-item__div-image-button">
         <div className="single-item__div-image">
           <img
