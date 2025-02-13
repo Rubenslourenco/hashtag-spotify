@@ -1,7 +1,7 @@
 import SingleItem from "./SingleItem"; //
-
+import { artistArray } from "../assets/database/artists";
 // eslint-disable-next-line react/prop-types
-const ItemList = ({ title, items, itemsArray }) => {
+const ItemList = ({ title, items }) => {
   return (
     <div>
       <div className="item-list">
@@ -13,10 +13,16 @@ const ItemList = ({ title, items, itemsArray }) => {
         </div>
 
         <div className="item-list__container">
-          {itemsArray
+          {artistArray
             .filter((currentvalue, index) => index < items)
             .map((currObj, index) => (
-              <SingleItem {...currObj} key={`${title}-${index}`} />
+              <SingleItem
+                id={currObj.id}
+                name={currObj.name}
+                image={currObj.image}
+                banner={currObj.banner}
+                key={`${title}-${index}`}
+              />
             ))}
         </div>
       </div>

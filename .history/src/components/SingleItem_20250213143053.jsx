@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
 // eslint-disable-next-line react/prop-types
-const SingleItem = ({ name, image, artist }) => {
+const SingleItem = ({ name, image }) => {
   return (
     <div className="single-item">
       <div className="single-item__div-image-button">
@@ -18,9 +18,7 @@ const SingleItem = ({ name, image, artist }) => {
         <div className="single-item__2lines">
           <p className="single-item__title">{name}</p>
         </div>
-        <p className="single-item__type">
-          {artist === undefined ? "Artista" : artist}
-        </p>
+        <p className="single-item__type">Artista</p>
       </div>
     </div>
   );

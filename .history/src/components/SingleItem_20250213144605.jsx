@@ -18,9 +18,7 @@ const SingleItem = ({ name, image, artist }) => {
         <div className="single-item__2lines">
           <p className="single-item__title">{name}</p>
         </div>
-        <p className="single-item__type">
-          {artist === undefined ? "Artista" : artist}
-        </p>
+        <p className="single-item__type">{artist}</p>
       </div>
     </div>
   );

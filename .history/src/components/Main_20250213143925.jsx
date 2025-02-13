@@ -1,12 +1,11 @@
 import ItemList from "./ItemList";
-import { artistArray } from "../assets/database/artists";
-import { songsArray } from "../assets/database/songs";
+import { artistArray, musicArray } from "../assets/database/artists";
 const Main = () => {
   return (
     <div className="main">
       <ItemList title="Artistas Populares" items={5} itemsArray={artistArray} />
 
-      <ItemList title="Musicas Populares" items={20} itemsArray={songsArray} />
+      <ItemList title="Musicas Populares" items={20} itemsArray={musicArray} />
     </div>
   );
 };

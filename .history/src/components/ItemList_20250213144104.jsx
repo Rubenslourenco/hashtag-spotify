@@ -1,5 +1,4 @@
 import SingleItem from "./SingleItem"; //
-
 // eslint-disable-next-line react/prop-types
 const ItemList = ({ title, items, itemsArray }) => {
   return (
