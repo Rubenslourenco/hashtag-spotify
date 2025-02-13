@@ -14,7 +14,6 @@ const ItemList = ({ title, items, itemsArray }) => {
 
         <div className="item-list__container">
           {itemsArray
-            // eslint-disable-next-line react/prop-types
             .filter((currentvalue, index) => index < items)
             .map((currObj, index) => (
               <SingleItem {...currObj} key={`${title}-${index}`} />

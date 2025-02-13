@@ -18,7 +18,7 @@ const SingleItem = ({ name, image, artist }) => {
         <div className="single-item__2lines">
           <p className="single-item__title">{name}</p>
         </div>
-        <p className="single-item__type">{artist ?? "Artista"}</p>
+        <p className="single-item__type">{artist ? artist : "Artista"}</p>
       </div>
     </div>
   );
