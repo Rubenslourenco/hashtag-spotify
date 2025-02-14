@@ -2,16 +2,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
 import { Link, useParams } from "react-router-dom";
 import SongList from "../components/SongList";
-import { artistArray } from "../assets/database/artists";
-import { songsArray } from "../assets/database/songs";
 
 // eslint-disable-next-line react/prop-types
 const Artist = () => {
-  const { id } = useParams();
-  // console.log(useParams());
-  const artistObj = artistArray.filter(
-    (currentArtistObj) => currentArtistObj.id === Number(id)
-  )[0];
+  console.log(useParams());
 
   return (
     <div className="artist">
