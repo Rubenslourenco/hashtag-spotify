@@ -25,7 +25,7 @@ const ItemList = ({ title, items, itemsArray, path, idPath }) => {
         <div className="item-list__container">
           {itemsArray
             // eslint-disable-next-line react/prop-types
-            .filter((currentvalue, index) => index < finalItems)
+            .filter((currentvalue, index) => index < items)
             .map((currObj, index) => (
               <SingleItem
                 idPath={idPath}
