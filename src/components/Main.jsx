@@ -5,19 +5,19 @@ const Main = () => {
   return (
     <div className="main">
       <ItemList
-        title="Artistas Populares"
+        title="Artistas"
         items={5}
         itemsArray={artistArray}
         path="/artists"
-        idPath="/artist/"
+        idPath="/artist"
       />
 
       <ItemList
-        title="Musicas Populares"
+        title="Musicas"
         items={20}
         itemsArray={songsArray}
         path="/songs"
-        idPath="/song/"
+        idPath="/song"
       />
     </div>
   );

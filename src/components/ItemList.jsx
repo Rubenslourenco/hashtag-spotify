@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SingleItem from "./SingleItem"; //
 
 // eslint-disable-next-line react/prop-types
@@ -7,9 +8,9 @@ const ItemList = ({ title, items, itemsArray, path, idPath }) => {
       <div className="item-list">
         <div className="item-list__header">
           <h2>{title}</h2>
-          <a href={path} className="item-list__link">
+          <Link to={path} className="item-list__link">
             Mostrar tudo
-          </a>
+          </Link>
         </div>
 
         <div className="item-list__container">
