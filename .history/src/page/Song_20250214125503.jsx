@@ -11,7 +11,7 @@ const Song = () => {
           />
         </div>
       </div>
-      <div className="song__bar">
+      <div className="song__Bar">
         <div className="song__artist-image">
           <img
             width={75}

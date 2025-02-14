@@ -11,11 +11,10 @@ const Song = () => {
           />
         </div>
       </div>
-      <div className="song__bar">
+      <div className="song__Bar">
         <div className="song__artist-image">
           <img
             width={75}
-            height={75}
             src="https://i.scdn.co/image/ab67616d00001e02d50fbb2113e9d82d0677abce"
             alt="Imagem do artista"
           />
