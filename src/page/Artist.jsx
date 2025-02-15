@@ -18,15 +18,15 @@ const Artist = () => {
       <div
         className="artist__header"
         style={{
-          backgroundImage: `linear-gradient(to bottom, var(--_shade), var(--_shade)),url("https://i.scdn.co/image/ab67618600001016b37fbcbd078cb239588df5d9")`,
+          backgroundImage: `linear-gradient(to bottom, var(--_shade), var(--_shade)),url(${artistObj.banner})`,
         }}
       >
-        <h2 className="artist__title">Jorge & Mateus</h2>
+        <h2 className="artist__title">{artistObj.name}</h2>
       </div>
 
       <div className="artist__body">
         <h2>Populares</h2>
-        <SongList />
+        <SongList artistName={artistObj.name} />
       </div>
       <Link to="/song/:id">
         <FontAwesomeIcon
