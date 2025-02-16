@@ -1,17 +1,15 @@
+/* eslint-disable react/prop-types */
 import SongItem from "./SongItem";
-import PropTypes from "prop-types";
-// eslint-disable-next-line no-unused-vars
-const SongList = ({ artistName }) => {
+
+const SongList = ({ songsArray }) => {
   return (
     <div className="song-list">
-      <SongItem />
-      <SongItem />
+      {songsArray.map((currentSongObj, index) => (
+        <SongItem {...currentSongObj} index={index} key={index} />
+      ))}
       <p className="song-list__see-more">Ver mais</p>
     </div>
   );
-};
-SongList.propTypes = {
-  artistName: PropTypes.string.isRequired,
 };
 
 export default SongList;
