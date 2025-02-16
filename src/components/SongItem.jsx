@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 
-const SongList = ({ image, name, duration, artist, id, index }) => {
+const SongList = ({ image, name, duration, id, index }) => {
   return (
     <Link to={`/song/${id}`} className="song-item">
       <div className="song-item__number-album">
